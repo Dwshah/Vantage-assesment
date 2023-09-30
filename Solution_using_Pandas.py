@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3
 
 # Connect to the SQLite database
-conn = sqlite3.connect('your_database.db')
+conn = sqlite3.connect('PROMOSALES.db')
 
 # Load necessary tables into Pandas DataFrames
 customers_df = pd.read_sql_query("SELECT customer_id, age FROM Customer", conn)
