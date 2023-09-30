@@ -28,7 +28,7 @@ results = cursor.fetchall()
 connection.close()
 
 # Write the results to a CSV file
-with open('/Users/dwijs/sqlite3/output_sql.csv', 'w', newline='') as csvfile:
+with open('output_sql.csv', 'w', newline='') as csvfile:
     csv_writer = csv.writer(csvfile, delimiter=';')
     csv_writer.writerow(['Customer', 'Age', 'Item', 'Quantity'])
     
